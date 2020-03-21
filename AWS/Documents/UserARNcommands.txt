@@ -1,0 +1,107 @@
+Practice Commands
+
+------------------------------------------------------------------------------------------------------
+Microsoft Windows [Version 10.0.17763.678]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>aws configure
+AWS Access Key ID [****************hans]: A********************F",
+AWS Secret Access Key [****************hans]: A********************F",/A********************F",
+Default region name [m]: ap-south-1
+Default output format [mmm]: json
+
+C:\Users\Admin>aws --version
+aws-cli/1.16.234 Python/3.6.0 Windows/10 botocore/1.12.224
+
+C:\Users\Admin>aws iam list-users
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "e***********n",
+            "UserId": "A*************YU",
+            "Arn": "arn:aws:iam::9************8:user/e************n",
+            "CreateDate": "2019-************************Z"
+        }
+    ]
+}
+
+C:\Users\Admin>aws iam create-user --user-name ethans-s3-dev
+{
+    "User": {
+        "Path": "/",
+        "UserName": "e***********n,
+        "UserId": "A********************F",
+        "Arn": "arn:aws:iam::9*************8:user/e**************n",
+        "CreateDate": "2019-************************Z"
+    }
+}
+
+C:\Users\Admin>aws iam create-user --user-name ethans-s3-dev
+
+An error occurred (EntityAlreadyExists) when calling the CreateUser operation: User with name ethans-s3-dev already exists.
+
+C:\Users\Admin>aws iam list-users
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "e***********n,
+            "UserId": A********************F",
+            "Arn": "arn:aws:iam::9*************8:user/e**************n",
+            "CreateDate": "2019-************************Z"
+        },
+        {
+            "Path": "/",
+            "UserName": "ethans-s3-dev",
+            "UserId": A********************F",
+            "Arn": "arn:aws:iam::9*************8:user/e**************n",
+            "CreateDate": "2019-************************Z"
+        }
+    ]
+}
+
+C:\Users\Admin>
+C:\Users\Admin>
+C:\Users\Admin>aws iam list-groups
+{
+    "Groups": [
+        {
+            "Path": "/",
+            "GroupName": "administrator",
+            "GroupId": A********************F",
+            "Arn": "arn:aws:iam::9*************8:user/e**************n",
+            "CreateDate": "2019-09-08T06:27:41Z"
+        },
+        {
+            "Path": "/",
+            "GroupName": "s3-developer",
+            "GroupId": A********************F",
+            "Arn": "arn:aws:iam::9*************8:user/e**************n",
+            "CreateDate": "2019-************************Z"
+        }
+    ]
+}
+
+C:\Users\Admin>add user ethans-s3-dev to s3-developer
+'add' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin>aws iam add-user-to-group --user-name ethans-s3-dev --group-name  s3-developer
+
+C:\Users\Admin>
+C:\Users\Admin>
+C:\Users\Admin>
+C:\Users\Admin>
+C:\Users\Admin>
+C:\Users\Admin>
+C:\Users\Admin>aws s3 mb s3://ethans-sept19-sangharsh --region ap-south-1
+make_bucket: ethans-sept19-sangharsh
+
+C:\Users\Admin>aws configure
+AWS Access Key ID [****************5DUN]: A********************F",
+AWS Secret Access Key [****************qS8A]: A********************F",/A********************F",
+Default region name [ap-south-1]: ap-south-1
+Default output format [json]: json
+
+C:\Users\Admin>
