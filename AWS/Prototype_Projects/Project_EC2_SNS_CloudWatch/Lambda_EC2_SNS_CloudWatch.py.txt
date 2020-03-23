@@ -1,0 +1,17 @@
+import json
+
+import boto3
+
+client = boto3.client('sns')
+
+def lambda_handler(event, context):
+
+	TopicArn = 'arn:aws:sns:ap-southeast-1:969030651138:Topic-Lambda-SNS-EC2'
+
+	Message = 'EC2 stopped plase take quick Actions'
+  
+	client.publish(
+TopicArn=TopicArn,
+Message= Message,
+)
+
