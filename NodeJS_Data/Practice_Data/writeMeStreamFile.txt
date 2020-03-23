@@ -1,0 +1,21 @@
+Just readme file
+for fs Module
+
+
+data added for asynchronous writing
+
+
+<html>
+<h1>Node Calculator</h1>
+<body>
+	<form>  
+		<label>Enter First Number</label><br>  
+		<input type="text" name="firstnumber"><br>  
+		<label>Enter Second Number</label><br>  
+		<input type="text" name="secondnumber"><br>  
+		<br><input type="submit" value="submit">  
+	</form> 
+</body>
+</html>
+
+ 
